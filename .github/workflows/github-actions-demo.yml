@@ -33,4 +33,5 @@ jobs:
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
       run: |-
-        kubectl apply -f /k8s/ .
+        cd /k8s
+        kubectl apply -f .
